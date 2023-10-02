@@ -13,14 +13,14 @@
         }
 
         header {
-            background-color: #fff;
-            color: #000;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 10px;
         }
 
         nav {
-            background-color: #fff;
+            background-color: #444;
             padding: 10px;
         }
 
@@ -28,9 +28,7 @@
             list-style-type: none;
             padding: 0;
             display: flex;
-            /* Display the list items horizontally */
             justify-content: center;
-            /* Center the items horizontally */
         }
 
         nav ul li {
@@ -39,16 +37,13 @@
 
         nav a {
             text-decoration: none;
-            color: #000;
+            color: #fff;
             padding: 5px 10px;
-            /* Add padding to the tabs */
-            border: 1px solid #000;
-            /* Add a border to separate the tabs */
+            border: 1px solid #fff;
         }
 
         nav a:hover {
-            background-color: #c7c7c7;
-            /* Change the background color on hover */
+            background-color: #555;
         }
 
         main {
@@ -61,10 +56,26 @@
         }
 
         footer {
-            background-color: #fff;
-            color: #000;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 10px;
+        }
+
+        /* Media Query for Small Screens (Mobile) */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                /* Stack navigation links vertically */
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                /* Make navigation links full-width for mobile */
+                margin: 5px auto;
+                /* Center-align navigation links */
+            }
         }
     </style>
 </head>
@@ -89,9 +100,8 @@
 
     <main>
         <img src="profile.jpg" alt="Profile Picture" class="img-thumbnail">
-        <p class="lead">Engineering Leader based in Bay Area, California. I'm curious by nature, build software for a
-            living, moonlighted as a singer, songwriter, and music producer in the past. This is my personal website.
-        </p>
+        <p class="lead">Engineering Leader based in California. I'm curious by nature, build software for a living,
+            moonlighted as a singer, songwriter, and music producer in the past. This is my personal website.</p>
     </main>
 
     <footer>
