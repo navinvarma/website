@@ -10,17 +10,21 @@
             font-family: Arial, sans-serif;
             padding: 10px;
             max-width: 100%;
+            background-color: white;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: white;
+            /* Set background color to white */
+            color: #333;
+            /* Text color */
             text-align: center;
             padding: 10px;
         }
 
         nav {
-            background-color: #444;
+            background-color: white;
+            /* Set background color to white */
             padding: 10px;
         }
 
@@ -37,13 +41,17 @@
 
         nav a {
             text-decoration: none;
-            color: #fff;
+            color: #333;
+            /* Link color */
             padding: 5px 10px;
-            border: 1px solid #fff;
+            border: 1px solid #333;
+            /* Border color */
         }
 
         nav a:hover {
             background-color: #555;
+            color: #fff;
+            /* Change text color on hover */
         }
 
         main {
@@ -56,8 +64,10 @@
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: white;
+            /* Set background color to white */
+            color: #333;
+            /* Text color */
             text-align: center;
             padding: 10px;
         }
@@ -66,15 +76,12 @@
         @media screen and (max-width: 768px) {
             nav ul {
                 flex-direction: column;
-                /* Stack navigation links vertically */
                 text-align: center;
             }
 
             nav a {
                 display: block;
-                /* Make navigation links full-width for mobile */
                 margin: 5px auto;
-                /* Center-align navigation links */
             }
         }
     </style>
